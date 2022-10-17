@@ -1,0 +1,29 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+
+}
+header p{
+    color: black;
+    font-family: sans-serif;
+    font-size: medium;
+}
+header div{
+    font-size: larger;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.chi{
+    width: 100%;
+
+}
+
+
+

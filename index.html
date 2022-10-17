@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        class Car {
+        constructor(name, year, car_model) {
+        this.name = name;
+        this.year = year;
+        this.model = car_model;
+}
+
+
+age() {
+ let date = new Date();
+ return date.getFullYear() - this.year;
+}
+
+model_car(){
+    return "The model of the car is "+ this.model;
+}
+
+colour(colour){
+    this.colour=colour;
+    return "The colour of the car is "+ this.colour;
+}
+
+}
+let myCar = new Car("Ford", 2014, "Spider");
+document.write(myCar.model_car()+"<br>")
+document.write(myCar.colour("Gold"))
+document.write("<p>"+"The name of the car is " +myCar.name+"</p>")
+document.getElementById("demo").innerHTML ="My car is " + myCar.age() + " years old." + myCar.name;
+    </script>
+</body>
+</html>
+         <!-- <p id="current date"> </p>
+         <button onclick="document.getElementById('current date').innerHTML= Date()"> Click me to know the current date</button>
+         <input type="text" id="firstname" onkeyup="onKeyUpFunction()">
+        <p>The first name is: <span id="testkey"></span></p> 
+
+   
+     const rainbowColor = ['red','orange','yellow','green','blue','indigo','violet'];
+        for (var i=0; i<rainbowColor.length; i++){
+            document.write(rainbowColor[i] + '<br>');
+        }
+        var x= 10;
+        while(x<=15){
+            x = x+1;
+            document.write(x + '<br>');
+        }
+
+         let sn = 1;
+
+        for(var x=0; x<10; x++){
+            document.write( sn + '...' + 'I love chidinma Obiano <br>' );
+            sn++;
+        }
+
+        let girl = 'mfon';
+        switch(girl){
+            case'mfon':
+            document.write('you must love going to spar');
+            break;
+            case 'chidinma':
+            document.write('you must like processing transcript at YABATECH');
+            break;
+            default:
+            document.write('you don,t like any one of them');
+
+
+        }
+
+        let days = 7;
+        switch(days){
+            case 1:
+            document.write('sunday');
+            break;
+            case 2:
+            document.write('tuesday');
+            break;
+            case 3:
+            document.write('wednesday');
+            break;
+            case 4:
+            document.write('thursday');
+            break;
+            default:
+            document.write('no any other day');
+
+
+        } */
+
+                        
+                /* words = fixNames("the", "DALLAS", "CowBoys")
+                for (j = 0 ; j < words.length ; ++j) 
+                document.write(words[j] + "<br>")
+                function fixNames() { 
+                var s = new Array()
+                for (j = 0 ; j < fixNames.arguments.length ; ++j) 
+                s[j] = fixNames.arguments[j].charAt(0).toUpperCase() + 
+                fixNames.arguments[j].substr(1).toLowerCase()
+                return s
+                } 
+
+                function onKeyUpFunction() {
+                let input = document.getElementById("firstname").value.toUpperCase();
+                document.getElementById("testkey").innerHTML = input;
+                }  */
+
+
+
+        //global scope
+        /* var x = 20;
+        var y = 10;
+        var z = x - y;
+        function sum() {
+        let z = x + y;
+        document.write(z+'<br>');
+        }
+        sum();
+        function subtraction() {
+        document.write(z);
+        }
+        subtraction();
+
+
+        class Car {
+        constructor(name, year, car_model) {
+        this.name = name;
+        this.year = year;
+        this.model = car_model;
+        }
+        age() {
+        let date = new Date();
+        return date.getFullYear() - this.year;
+        }
+        model_car(){
+            return " the model of the car is" + this.model;
+
+        }
+        colour(color){
+            this.color= color;
+            return "the color of the car is" + this.color;
+        }
+        }
+        let myCar = new Car("Ford", 2014 , "spider");
+        document.write(myCar.model_car()+ "<br>")
+        document.write("<p>" +" the name of the car is " + myCar.name  + "</p>")
+        document.getElementById("demo").innerHTML ="My car is " + myCar.age() + " years old" +myCar.name; 
+         */ -->
+
+
+         

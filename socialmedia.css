@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "open sans", "Helvetica Neue", "sans-serif";
+}
+img {
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: f5f7f8;
+
+}
