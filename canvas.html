@@ -28,25 +28,22 @@
             }
         }
         document.getElementById("demo").innerHTML= x;*/
-        var a,b,c,D,x1,x2,rp,ip;
-         a= 2;
-         b= 4;
-         c= -20;
-         D= b^2 - 4*a*c;
-
-        if (D >= 0 ){
-            R1=(-b+ Math.sqrt(D))/2 *a;
-            R2=(-b-Math.sqrt(D))/2 *a;
         
-        document.write(R1);
-        document.write(R2);
+        function Book(colour,authur,pages,height){
+            this.colour = colour;
+            this.authur = authur;
+            this.pages = pages;
+            this.height = height;
+            this.pageOpen= function() {
+                return this.pages + "is open"
+            }
         }
-        else {
-            rp = b/2*a;
-            ip=sqrt(-D)/2*a;
-            document.write(rp+(ip));
-            document,write(rp-(ip));
-        }
+        var geo = new Book(
+          "blue", "micheal", 48, 15
+        )
+        document.getElementById("demo").innerHTML = 
+        "this page is turned" + geo.pageOpen;
+
 
 
     </script>
